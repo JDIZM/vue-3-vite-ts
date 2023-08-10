@@ -1,4 +1,4 @@
-@use '@/sass/helpers/vars' as *;
+@use '@/sass/base/vars' as *;
 
 // Apply the sass variables to the :root element to create css variables
 @mixin vars {
