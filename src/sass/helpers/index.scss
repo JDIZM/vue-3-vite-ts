@@ -1,0 +1,13 @@
+
+// make available as a whole package on the global namespace
+// @use "@/sass/helpers" as *;
+
+// use the vars mixin from the modules folder
+// @use '@/sass/helpers/vars' as *;
+
+// https://css-tricks.com/introducing-sass-modules/
+// https://css-tricks.com/introducing-sass-modules/#aa-pass-along-files-with-forward
+
+@forward "functions";
+@forward "mixins";
+@forward "vars";

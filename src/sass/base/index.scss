@@ -1,0 +1,6 @@
+// make available as a whole package on the global namespace
+// @use "@/sass/helpers" as *;
+
+@forward "reset";
+@forward "typography";
+@forward "base";

@@ -1,0 +1,71 @@
+// color palette
+$colors: (
+  primary: #101921,
+  secondary: #6325c8,
+  gradient: linear-gradient(101.51deg, #003e52 -10.81%, #101921 127.59%),
+  white: #ffffff,
+  white-soft: #f8f8f8,
+  white-mute: #f2f2f2,
+  black: #181818,
+  black-soft: #222222,
+  black-mute: #282828,
+  indigo: #2c3e50,
+  divider-light-1: rgba(60, 60, 60, 0.29),
+  divider-light-2: rgba(60, 60, 60, 0.12),
+  divider-dark-1: rgba(84, 84, 84, 0.65),
+  divider-dark-2: rgba(84, 84, 84, 0.48),
+  text-light-1: #2c3e50,
+  text-light-2: rgba(60, 60, 60, 0.66),
+  text-dark-1: #ffffff,
+  text-dark-2: rgba(235, 235, 235, 0.64),
+);
+
+// colors for semantic elements
+$semantic-colors: (
+  color-background:  map-get($colors, white),
+  color-background-soft: map-get($colors, black-soft),
+  color-background-mute: map-get($colors, black-mute),
+  color-border:  map-get($colors, divider-light-2),
+  color-border-hover: map-get($colors, divider-light-1),
+  color-heading: map-get($colors, text-light-1),
+  color-text: map-get($colors, text-light-2),
+  section-gap: 160px,
+  links: map-get($colors, secondary),
+);
+
+$semantic-colors-dark: (
+  color-background:  map-get($colors, black),
+  color-background-soft: map-get($colors, black-soft),
+  color-background-mute: map-get($colors, black-mute),
+  color-border:  map-get($colors, divider-dark-2),
+  color-border-hover: map-get($colors, divider-dark-1),
+  color-heading: map-get($colors, text-dark-1),
+  color-text: map-get($colors, text-dark-2),
+  section-gap: 160px,
+  links: map-get($colors, secondary),
+);
+
+$spacing: (
+  1: 0.5rem,
+  2: 1rem,
+  3: 1.5rem,
+  4: 2rem,
+  5: 2.5rem,
+  6: 3rem,
+  7: 3.5rem,
+  8: 4rem,
+);
+
+$breakpoints: (
+  xs: 320px,
+  sm: 600px,
+  md: 768px,
+  lg: 960px,
+  xl: 1400px,
+);
+
+$breakpoint-xs: map-get($breakpoints, xs);
+$breakpoint-sm: map-get($breakpoints, sm);
+$breakpoint-md: map-get($breakpoints, md);
+$breakpoint-lg: map-get($breakpoints, lg);
+$breakpoint-xl: map-get($breakpoints, xl);

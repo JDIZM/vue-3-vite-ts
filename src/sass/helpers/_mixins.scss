@@ -1,0 +1,48 @@
+@use '@/sass/helpers/vars' as *;
+
+// Apply the sass variables to the :root element to create css variables
+@mixin vars {
+
+  // define the initial theme css variables
+  :root {
+    @each $name, $color in $colors {
+      --#{"" + $name}: #{$color};
+    }
+
+    @each $name, $breakpoint in $breakpoints {
+      --breakpoint-#{"" + $name}: #{$breakpoint};
+    }
+
+    @each $name, $spacing in $spacing {
+      --spacing-#{"" + $name}: #{$spacing};
+    }
+  }
+
+  // define the semantic color css variables
+  // apply a .light or .dark class to the root html element to change the color scheme
+  :root {
+    @each $name, $color in $semantic-colors {
+      --#{"" + $name}: #{$color};
+    }
+
+    &.light {
+      @each $name, $color in $semantic-colors {
+        --#{"" + $name}: #{$color};
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      @each $name, $color in $semantic-colors-dark {
+        --#{"" + $name}: #{$color};
+      }
+    }
+
+    &.dark {
+      @each $name, $color in $semantic-colors-dark {
+        --#{"" + $name}: #{$color};
+      }
+    }
+  }  
+}
+
+@include vars;
