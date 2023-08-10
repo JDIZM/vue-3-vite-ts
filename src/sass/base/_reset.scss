@@ -3,6 +3,7 @@
   font-size: 16px; // set root font-size
   line-height: 1.4; // unitless vertical rhythm
   color: initial; // initial will change based on color-scheme
+  color-scheme: var(--color-scheme);
 }
 
 *,
