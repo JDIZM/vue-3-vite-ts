@@ -1,5 +1,5 @@
 import MyHeader from './MyHeader.vue'
-import type { Meta, StoryFn } from '@storybook/vue3';
+import type { Meta, StoryFn } from '@storybook/vue3'
 
 export default {
   title: 'Example/Header',
@@ -8,7 +8,7 @@ export default {
     // More on Story layout: https://storybook.js.org/docs/vue/configure/story-layout
     layout: 'fullscreen'
   }
-} as Meta<typeof MyHeader>;
+} as Meta<typeof MyHeader>
 
 const Template: StoryFn<typeof MyHeader> = (args) => ({
   // Components used in your story `template` are defined in the `components` object

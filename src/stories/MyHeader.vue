@@ -42,7 +42,7 @@
 <script setup lang="ts">
 import './header.css'
 import MyButton from './MyButton.vue'
-import type { PropType } from 'vue';
+import type { PropType } from 'vue'
 
 defineProps({
   user: {
