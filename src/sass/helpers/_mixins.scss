@@ -2,7 +2,6 @@
 
 // Apply the sass variables to the :root element to create css variables
 @mixin vars {
-
   // define the initial theme css variables
   :root {
     @each $name, $color in $colors {
@@ -42,7 +41,7 @@
         --#{"" + $name}: #{$color};
       }
     }
-  }  
+  }
 }
 
 @include vars;

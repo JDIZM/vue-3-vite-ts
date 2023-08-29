@@ -17,34 +17,34 @@ $colors: (
   text-light-1: #2c3e50,
   text-light-2: rgba(60, 60, 60, 0.66),
   text-dark-1: #ffffff,
-  text-dark-2: rgba(235, 235, 235, 0.64),
+  text-dark-2: rgba(235, 235, 235, 0.64)
 );
 
 // colors for semantic elements
 $semantic-colors: (
   color-scheme: light,
-  color-background:  map-get($colors, white),
+  color-background: map-get($colors, white),
   color-background-soft: map-get($colors, black-soft),
   color-background-mute: map-get($colors, black-mute),
-  color-border:  map-get($colors, divider-light-2),
+  color-border: map-get($colors, divider-light-2),
   color-border-hover: map-get($colors, divider-light-1),
   color-heading: map-get($colors, text-light-1),
   color-text: map-get($colors, text-light-2),
   section-gap: 160px,
-  links: map-get($colors, secondary),
+  links: map-get($colors, secondary)
 );
 
 $semantic-colors-dark: (
   color-scheme: dark,
-  color-background:  map-get($colors, black),
+  color-background: map-get($colors, black),
   color-background-soft: map-get($colors, black-soft),
   color-background-mute: map-get($colors, black-mute),
-  color-border:  map-get($colors, divider-dark-2),
+  color-border: map-get($colors, divider-dark-2),
   color-border-hover: map-get($colors, divider-dark-1),
   color-heading: map-get($colors, text-dark-1),
   color-text: map-get($colors, text-dark-2),
   section-gap: 160px,
-  links: map-get($colors, secondary),
+  links: map-get($colors, secondary)
 );
 
 $spacing: (
@@ -55,7 +55,7 @@ $spacing: (
   5: 2.5rem,
   6: 3rem,
   7: 3.5rem,
-  8: 4rem,
+  8: 4rem
 );
 
 $breakpoints: (
@@ -63,7 +63,7 @@ $breakpoints: (
   sm: 600px,
   md: 768px,
   lg: 960px,
-  xl: 1400px,
+  xl: 1400px
 );
 
 $breakpoint-xs: map-get($breakpoints, xs);
