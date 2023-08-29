@@ -1,5 +1,5 @@
-import MyButton from './Button.vue'
-
+import MyButton from './MyButton.vue'
+import type { Meta, StoryFn } from '@storybook/vue3';
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
   title: 'Example/Button',
@@ -13,10 +13,10 @@ export default {
       options: ['small', 'medium', 'large']
     }
   }
-}
+} as Meta<typeof MyButton>;
 
 // More on component templates: https://storybook.js.org/docs/vue/writing-stories/introduction#using-args
-const Template = (args) => ({
+const Template: StoryFn<typeof MyButton> = (args) => ({
   // Components used in your story `template` are defined in the `components` object
   components: { MyButton },
   // The story's `args` need to be mapped into the template through the `setup()` method

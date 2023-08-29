@@ -1,5 +1,6 @@
 import { within, userEvent } from '@storybook/testing-library'
-import MyPage from './Page.vue'
+import type { Meta, StoryFn } from '@storybook/vue3';
+import MyPage from './MyPage.vue'
 
 export default {
   title: 'Example/Page',
@@ -8,9 +9,9 @@ export default {
     // More on Story layout: https://storybook.js.org/docs/vue/configure/story-layout
     layout: 'fullscreen'
   }
-}
+} as Meta<typeof MyPage>;
 
-const Template = () => ({
+const Template: StoryFn<typeof MyPage> = () => ({
   // Components used in your story `template` are defined in the `components` object
   components: { MyPage },
 

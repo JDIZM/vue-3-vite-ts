@@ -39,21 +39,22 @@
   </header>
 </template>
 
-<script>
+<script setup lang="ts">
 import './header.css'
-import MyButton from './Button.vue'
+import MyButton from './MyButton.vue'
+import type { PropType } from 'vue';
 
-export default {
-  name: 'my-header',
+defineProps({
+  user: {
+    type: Object as PropType<{ name: string } | null>,
+    required: false,
+    default: null
+  }
+})
 
-  components: { MyButton },
-
-  props: {
-    user: {
-      type: Object
-    }
-  },
-
-  emits: ['login', 'logout', 'createAccount']
-}
+defineEmits<{
+  (event: 'login'): void
+  (event: 'logout'): void
+  (event: 'createAccount'): void
+}>()
 </script>

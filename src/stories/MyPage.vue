@@ -53,31 +53,46 @@
   </article>
 </template>
 
-<script>
+<script setup lang="ts">
 import './page.css'
-import MyHeader from './Header.vue'
+import MyHeader from './MyHeader.vue'
+import { ref } from 'vue'
 
-export default {
-  name: 'my-page',
+const user = ref<{ name: string } | null>(null)
 
-  components: { MyHeader },
-
-  data() {
-    return {
-      user: null
-    }
-  },
-
-  methods: {
-    onLogin() {
-      this.user = { name: 'Jane Doe' }
-    },
-    onLogout() {
-      this.user = null
-    },
-    onCreateAccount() {
-      this.user = { name: 'Jane Doe' }
-    }
-  }
+function onLogin() {
+  user.value = { name: 'Jane Doe' }
 }
+
+function onLogout() {
+  user.value = null
+}
+
+function onCreateAccount() {
+  user.value = { name: 'Jane Doe' }
+}
+
+// export default {
+//   name: 'my-page',
+
+//   components: { MyHeader },
+
+//   data() {
+//     return {
+//       user: null
+//     }
+//   },
+
+//   methods: {
+//     onLogin() {
+//       this.user = { name: 'Jane Doe' }
+//     },
+//     onLogout() {
+//       this.user = null
+//     },
+//     onCreateAccount() {
+//       this.user = { name: 'Jane Doe' }
+//     }
+//   }
+// }
 </script>
