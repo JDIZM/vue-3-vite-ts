@@ -13,6 +13,19 @@ Built with:
 8. Storybook
 
 
+## Setup
+
+This project uses volta.sh to manage node, npm and package manager versions.
+
+To install volta run the following command in the terminal.
+
+```
+curl https://get.volta.sh | bash
+```
+
+Install volta.sh and run `volta install` to install the correct node version.
+
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
