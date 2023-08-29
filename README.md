@@ -2,6 +2,17 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
+Built with:
+1. Vue 3
+2. TypeScript
+3. Vite
+4. Vitest + Vue Test Utils
+5. VueUse https://vueuse.org/ Collection of Vue Composition Utilities
+6. UI Library
+7. Pinia - https://pinia.esm.dev/ - State Management
+8. Storybook
+
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
