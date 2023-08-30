@@ -1,7 +1,8 @@
 // color palette
 $colors: (
   primary: #101921,
-  secondary: #6325c8,
+  secondary-dark-1: #6325c8,
+  secondary-light-1: rgb(68, 31, 128),
   gradient: linear-gradient(101.51deg, #003e52 -10.81%, #101921 127.59%),
   white: #ffffff,
   white-soft: #f8f8f8,
@@ -17,12 +18,14 @@ $colors: (
   text-light-1: #2c3e50,
   text-light-2: rgba(60, 60, 60, 0.66),
   text-dark-1: #ffffff,
-  text-dark-2: rgba(235, 235, 235, 0.64)
+  text-dark-2: rgba(235, 235, 235, 0.64),
+  error: #e76551
 );
 
 // colors for semantic elements
 $semantic-colors: (
   color-scheme: light,
+  color-secondary: map-get($colors, secondary-light-1),
   color-background: map-get($colors, white),
   color-background-soft: map-get($colors, black-soft),
   color-background-mute: map-get($colors, black-mute),
@@ -30,12 +33,14 @@ $semantic-colors: (
   color-border-hover: map-get($colors, divider-light-1),
   color-heading: map-get($colors, text-light-1),
   color-text: map-get($colors, text-light-2),
+  color-error: map-get($colors, error),
   section-gap: 160px,
   links: map-get($colors, secondary)
 );
 
 $semantic-colors-dark: (
   color-scheme: dark,
+  color-secondary: map-get($colors, secondary-dark-1),
   color-background: map-get($colors, black),
   color-background-soft: map-get($colors, black-soft),
   color-background-mute: map-get($colors, black-mute),
@@ -43,6 +48,7 @@ $semantic-colors-dark: (
   color-border-hover: map-get($colors, divider-dark-1),
   color-heading: map-get($colors, text-dark-1),
   color-text: map-get($colors, text-dark-2),
+  color-error: map-get($colors, error),
   section-gap: 160px,
   links: map-get($colors, secondary)
 );
