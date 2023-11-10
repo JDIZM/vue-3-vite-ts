@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useTheme } from '@/composables/useTheme'
-const theme = useTheme()
-// TODO carbon icon type declarations
-// @ts-ignore
+// @ts-expect-error
 import Moon from '@carbon/icons-vue/es/moon/16'
-// @ts-ignore
+// @ts-expect-error
 import Sun from '@carbon/icons-vue/es/sun/16'
 
+const theme = useTheme()
 const icon = computed(() => (theme.mode.value === 'dark' ? Moon : Sun))
 </script>
 

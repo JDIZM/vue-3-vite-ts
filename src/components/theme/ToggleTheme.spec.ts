@@ -12,11 +12,13 @@ describe('ToggleTheme', () => {
   beforeEach(() => {
     wrapper = mount(ToggleTheme)
   })
+
   it('renders properly', () => {
     expect(wrapper.exists()).toBe(true)
     expect(icon().exists()).toBe(true)
     expect(button().exists()).toBe(true)
   })
+
   it('contains a button with theme text', () => {
     expect(button().text()).toContain('light')
   })
